@@ -1,5 +1,5 @@
 body {
-    background-color: #F6F2CF;
+    background-color: #F9F6CB;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -11,13 +11,13 @@ body {
     position: center;
     margin: auto;
     height: 100%;
-    padding: 50px;
+    padding: 25px;
 }
 
 .sidebar {
     text-align: center;
     float: left;
-    position: absolute;
+    position: fixed;
     width: 200px;
     height: 600px;
     background-color: #FF4548;
@@ -26,7 +26,7 @@ body {
 }
 
 .nav {
-
+    margin-top: 100px;
 }
 
 .header-photo {
@@ -37,6 +37,8 @@ body {
     background-color: #A1FF95;
     padding: 25px;
     margin-left: 375px;
+    margin-top: 50px;
+    margin-right: 50px;
     box-sizing: border-box;
 }
 
@@ -47,11 +49,19 @@ body {
 
 ul {
     list-style-type: none;
+    width: 200px;
     margin: 0;
     padding: 0;
 }
 
-li {
+li a {
     display: block;
+    color: #FFF;
     padding: 8px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+  background-color: #FFFFFF;
+  color: #000;
 }
