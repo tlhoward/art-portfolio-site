@@ -16,20 +16,22 @@ body {
 
 .sidebar {
     text-align: center;
+    vertical-align: middle;
     float: left;
     position: fixed;
-    width: 200px;
+    width: 250px;
     height: 600px;
-    background-color: #FF4548;
-    padding: 50px;
+    background-color: #FFF;
     margin: 50px;
 }
 
 .nav {
-    margin-top: 100px;
+    text-align: center;
+    margin-top: 75px;
 }
 
 .header-photo {
+
 }
 
 .main {
@@ -49,19 +51,19 @@ body {
 
 ul {
     list-style-type: none;
-    width: 200px;
+    width: 250px;
     margin: 0;
     padding: 0;
 }
 
 li a {
     display: block;
-    color: #FFF;
+    color: #4C4C4C;
     padding: 8px 16px;
     text-decoration: none;
 }
 
 li a:hover {
-  background-color: #FFFFFF;
+  background-color: #C2E5FD;
   color: #000;
 }
