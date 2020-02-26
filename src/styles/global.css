@@ -2,7 +2,7 @@ html {
     height: 100%;
 }
 
-body {
+/* body {
     background-color: #F9F6CB;
     margin: 0;
     padding: 0;
@@ -59,6 +59,8 @@ main {
     clear: both;
 }
 
+*/
+
 .navbar ul {
     list-style-type: none;
     width: 250px;
@@ -76,4 +78,86 @@ main {
 .navbar li a:hover {
   background-color: #C2E5FD;
   color: #000;
+}
+
+/* Messing around with some different media styles below */
+
+/* Desktop */
+@media only screen and (min-width: 401px) {
+    body {
+        background-color: #F9F6CB;
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+    }
+    
+    .container {
+        background-color: #FFFFFF;
+        width: 90%;
+        position: absolute;
+        margin: auto;
+        min-height: 100%;
+        height:auto;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .navbar {
+        text-align: center;
+        vertical-align: middle;
+        float: left;
+        position: fixed;
+        width: 250px;
+        height: 600px;
+        background-color: #FFF;
+        margin-left: 200px;
+        margin-top: 75px;
+    }
+    
+    .nav {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.25em;
+    }
+    
+    .header-photo {
+        font-size: 1.5em;
+    }
+    
+    main {
+        position: relative;
+        background-color: #A1FF95;
+        padding: 25px;
+        margin-left: 475px;
+        margin-top: 100px;
+        margin-right: 250px;
+        box-sizing: border-box;
+    }
+    
+    .footer {
+        text-align: center;
+        clear: both;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: #FFF;
+    }
+
+    .navbar {
+        width: 100%;
+        background-color: #F9F6CB;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    .nav {
+        text-align: center;
+        display: inline-block;
+        font-size: 1.25em;
+    }
 }
