@@ -90,8 +90,8 @@ main {
 
 /* Messing around with some different media styles below */
 
-/* Mobile */
-@media only screen and (max-width: 480px) {
+/* Mobile & tablet */
+@media only screen and (max-width: 768px) {
 
     body {
         background-color: #FFF;
@@ -115,8 +115,18 @@ main {
 
     .nav {
         text-align: center;
+        margin: 0 auto;
         font-size: 1.25em;
         width: 100%;
         height: auto;
+    }
+
+    .navbar ul {
+        width: 100%;
+    }
+
+    .navbar li {
+        list-style: none;
+        display: inline-block;
     }
 }
