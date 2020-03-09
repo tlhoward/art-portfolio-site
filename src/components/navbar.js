@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import header_icon from "../img/header_icon.jpg"
+import header_icon from "../img/header_icon.png"
 
 export default () => (
     <div class="navbar">
