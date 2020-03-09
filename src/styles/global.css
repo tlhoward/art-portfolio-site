@@ -2,65 +2,6 @@ html {
     height: 100%;
 }
 
-/* body {
-    background-color: #F9F6CB;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-}
-
-.container {
-    background-color: #FFFFFF;
-    width: 90%;
-    position: absolute;
-    margin: auto;
-    min-height: 100%;
-    height:auto;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar {
-    text-align: center;
-    vertical-align: middle;
-    float: left;
-    position: fixed;
-    width: 250px;
-    height: 600px;
-    background-color: #FFF;
-    margin-left: 200px;
-    margin-top: 75px;
-}
-
-.nav {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1.25em;
-}
-
-.header-photo {
-    font-size: 1.5em;
-}
-
-main {
-    position: relative;
-    background-color: #A1FF95;
-    padding: 25px;
-    margin-left: 475px;
-    margin-top: 100px;
-    margin-right: 250px;
-    box-sizing: border-box;
-}
-
-.footer {
-    text-align: center;
-    clear: both;
-}
-
-*/
-
 p {
     font-family: "Arial", sans-serif;
     font-size: 1.25em;
@@ -71,6 +12,26 @@ h1 {
     font-size: 3.5em;
 }
 
+body {
+    background-color: #F9F6CB;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+/* Holds both navbar and main content */
+.container {
+    background-color: #FFF;
+    width: 90%;
+    position: absolute;
+    margin: auto;
+    min-height: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+}
+
+/* Main content to the right of sidebar */
 main {
     position: relative;
     float: left;
@@ -78,21 +39,28 @@ main {
     padding: 50px;
     margin-top: 100px;
     margin-right: 150px;
+    margin-left: 400px;
     box-sizing: border-box;
 }
 
+/* Actual Sidebar Part */
 .navbar {
     font-family: "Arial", sans-serif;
     text-align: center;
     vertical-align: middle;
-    float: left;
     position: fixed;
     width: 250px;
     height: 600px;
     background-color: #FFF;
-    margin-left: 8%;
+    margin-left: 150px;
     margin-top: 75px;
-    margin-right: 100px;
+}
+
+.nav {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5em;
+    font-style: bold;
 }
 
 .navbar ul {
@@ -114,55 +82,12 @@ main {
   color: #000;
 }
 
+.footer {
+    text-align: center;
+    clear: both;
+}
+
 /* Messing around with some different media styles below */
-
-/* Desktop */
-@media only screen and (min-width: 401px) and (max-width: 2699px) {
-    body {
-        background-color: #F9F6CB;
-        margin: 0;
-        padding: 0;
-        font-size: 100%;
-    }
-    
-    .container {
-        background-color: #FFFFFF;
-        width: 90%;
-        position: absolute;
-        margin: auto;
-        min-height: 100%;
-        height: auto;
-        left: 0;
-        right: 0;
-    }
-    
-    .nav {
-        text-align: center;
-        margin-top: 40px;
-        font-size: 1.5em;
-        font-style: bold;
-    }
-    
-    .header-photo {
-        font-size: 1.5em;
-    }
-    
-    main {
-        margin-left: 500px;
-    }
-    
-    .footer {
-        text-align: center;
-        clear: both;
-    }
-}
-
-/* Big ol' monitors */
-@media only screen and (min-width: 2700px) {
-    main {
-        margin-left: 20%;
-    }
-}
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
