@@ -41,6 +41,7 @@ main {
     margin-right: 150px;
     margin-left: 400px;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 /* Side navigation menu. Includes links and header */
@@ -54,14 +55,7 @@ main {
     background-color: #FFF;
     margin-left: 150px;
     margin-top: 75px;
-}
-
-/* Actual part with the links */
-.nav {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 1.5em;
-    font-style: bold;
+    z-index: 2;
 }
 
 .navbar ul {
@@ -78,9 +72,75 @@ main {
     text-decoration: none;
 }
 
-.navbar li a:hover {
-  background-color: #C2E5FD;
-  color: #000;
+/* Actual part with the links */
+.nav-content {
+    margin-top: 40px;
+    font-size: 1.3em;
+    font-style: bold;
+    float: left;
+}
+
+/* subnav menu */
+.subnavbar  .subnavbtn{
+    color: #4C4C4C;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    background-color: inherit;
+    text-align: center;
+    width: 250px;
+    margin: 0;
+    font-size: 1em;
+    font-style: bold;
+}
+
+.subnavbtn {
+    position: relative;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(170, 248, 248);
+    overflow: hidden;
+    width: 250px;
+    margin-left: 250px;
+    text-align: left;
+    font-size: 1em;
+    z-index: 3;
+    margin-top: -44px;
+}
+
+
+.nav-content li:hover {
+    background-color: #C2E5FD;
+
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 2px;
+}
+
+.subnav-content li:hover {
+    background-color: #fff;
+}
+
+/* display subnav links on hover*/
+.subnavbar:hover .subnav-content {
+    display: block;
+}
+
+/* change the bg color of dropdown button when dropdown is shown */
+.subnavbar:hover .subnavbtn {
+    background-color: #C2E5FD;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+    border-width: 2px;
+}
+
+.subnav-content li a:hover {
+    color: gold;
 }
 
 .footer {

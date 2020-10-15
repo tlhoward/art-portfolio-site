@@ -3,6 +3,7 @@ import Layout from "../components/layout"
 
 export default () => (
     <Layout>
+
         <h1>Welcome</h1>
         <p>Hey! Sometime soon I'll probably add cards that have some art I want to show off because this is supposed to be a portfolio. Honestly
             there wont be anything extra serious on here for a while. </p>
